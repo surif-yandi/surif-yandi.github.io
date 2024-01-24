@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Template website news</title>
+        <title>Template website news | Homepage</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,13 +12,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/style.css">
+
     </head>
 
     <body>
+        <!--header-->
         <header class="header">
             <div class="header--meta">
                 <div class="container"><span>senin, 22 Januari 2024</span>
-                    <nav class="d-flex align-items-center"><span class="me-3"> follow kami :</span>
+                    <nav class="d-flex align-items-center">
+                        <span class="me-3"> follow kami :</span>
                         <ul class="meta--socmed">
                             <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -31,16 +34,24 @@
             <div class="header--top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 d-flex align-items-center"><a class="header-top--logo" href="index.html">Logo Web </a></div>
-                        <div class="col-lg-9 d-flex justify-content-end">
-                            <div class="ads-google"><img src="./images/ads-728x90.jpg" alt=""></div>
+                        <div class="col-lg-3 d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <a class="header-top--logo" href="index.html">Logo Web </a>
+                        </div>
+                        <div class="d-none d-lg-flex col-lg-9 justify-content-end">
+                            <div class="ads-google">
+                                <img src="./images/ads-728x90.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <nav class="header--nav">
                 <div class="container">
+                    <div class="header--btn-nav-mobile">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                     <ul>
+                        <li class="close-btn"><i class="fa-solid fa-times"></i></li>
                         <li class="active"><a href="#">Nasional</a></li>
                         <li><a href="#">Internasional</a></li>
                         <li><a href="#">Ekonomi</a></li>
@@ -51,11 +62,29 @@
                         <li><a href="#">Gaya Hidup</a></li>
                         <li><a href="#">Pendidikan</a></li>
                     </ul>
+                    <div class="header--btn-search">
+                        <i class="fa-solid fa-search me-2"></i>
+                        <span>Cari berita</span>
+                    </div>
                 </div>
             </nav>
+            <form class="header--form-search" action="">
+                <div class="close-btn">
+                    <i class="fa-solid fa-times"></i>
+                </div>
+                <div class="container">
+                    <input type="text" placeholder="Cari berita di sini">
+                    <button type="submit"><i class="fa-solid fa-search"></i></button>
+                </div>
+            </form>
         </header>
+        <!--/header-->
+
+        <!--section hero news-->
         <section class="hero-news">
-            <div class="container container--hero-news"><a class="hero-news--item" href="#"><img src="https://images.pexels.com/photos/3564013/pexels-photo-3564013.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="">
+            <div class="container container--hero-news">
+                <a class="hero-news--item" href="#">
+                    <img src="https://images.pexels.com/photos/3564013/pexels-photo-3564013.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="">
                     <div class="hero-news-item--text">
                         <div class="meta">
                             <div class="meta--category">Kesehatan</div>
@@ -63,15 +92,19 @@
                         </div>
                         <h1>Penelitian Terbaru Ungkap Manfaat Luar Biasa Dari Tidur Siang untuk Kesehatan </h1>
                     </div>
-                </a><a class="hero-news--item" href="#"><img src="https://images.pexels.com/photos/6865168/pexels-photo-6865168.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="">
+                </a>
+                <a class="hero-news--item" href="#">
+                    <img src="https://images.pexels.com/photos/6865168/pexels-photo-6865168.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="">
                     <div class="hero-news-item--text">
                         <div class="meta">
                             <div class="meta--date">19 Januari 2024</div>
                             <div class="meta--category">Teknologi</div>
                         </div>
-                        <h1>Inovasi Teknologi Baru Membantu Pengidap Alergi Atasi Musim Semi </h1>
+                        <h1>Inovasi Teknologi Baru Membantu Pengidap Alergi Atasi Musim Semi</h1>
                     </div>
-                </a><a class="hero-news--item" href="#"><img src="https://images.pexels.com/photos/542555/pexels-photo-542555.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="">
+                </a>
+                <a class="hero-news--item" href="#">
+                    <img src="https://images.pexels.com/photos/542555/pexels-photo-542555.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="">
                     <div class="hero-news-item--text">
                         <div class="meta">
                             <div class="meta--date">19 Januari 2024</div>
@@ -79,15 +112,21 @@
                         </div>
                         <h1>Seniman Lokal Sabet Penghargaan Bergengsi dalam Pameran Seni Internasional</h1>
                     </div>
-                </a></div>
+                </a>
+            </div>
         </section>
+        <!--/section hero news-->
+
         <div class="container mt-5">
             <div class="row">
                 <div class="col-lg-8">
+
                     <section class="group-news-1 mb-5">
                         <h2 class="group-news--heading">Berita Rekomendasi</h2>
                         <div class="row">
-                            <div class="col-lg-6"><a class="hero-thumb-news" href="#"><img src="https://images.pexels.com/photos/264512/pexels-photo-264512.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="">
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <a class="hero-thumb-news" href="#">
+                                    <img src="https://images.pexels.com/photos/264512/pexels-photo-264512.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="">
                                     <div class="hero-thumb-news--text">
                                         <div class="meta">
                                             <div class="meta--date">19 Januari 2024</div>
@@ -95,34 +134,47 @@
                                         </div>
                                         <h1>Inovasi Teknologi Baru Mengubah Paradigma Bisnis di Era Digital</h1>
                                     </div>
-                                </a></div>
+                                </a>
+                            </div>
                             <div class="col-lg-6 d-flex flex-column gap-4">
-                                <div class="small-list-news"><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                                    <div class="small-list-news--text"><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                                <div class="small-list-news">
+
+                                    <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                                    <div class="small-list-news--text">
+                                        <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                         <div class="meta">
                                             <div class="meta--date">20 Januari 2024</div>
                                             <div class="meta--category">Kesehatan</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="small-list-news"><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                                    <div class="small-list-news--text"><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                                <div class="small-list-news">
+
+                                    <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                                    <div class="small-list-news--text">
+                                        <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                         <div class="meta">
                                             <div class="meta--date">20 Januari 2024</div>
                                             <div class="meta--category">Ekonomi</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="small-list-news"><img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                                    <div class="small-list-news--text"><a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
+                                <div class="small-list-news">
+
+                                    <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                                    <div class="small-list-news--text">
+                                        <a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
                                         <div class="meta">
                                             <div class="meta--date">20 Januari 2024</div>
                                             <div class="meta--category">pendidikan</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="small-list-news"><img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                                    <div class="small-list-news--text"><a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
+                                <div class="small-list-news">
+
+                                    <img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                                    <div class="small-list-news--text">
+                                        <a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
                                         <div class="meta">
                                             <div class="meta--date">20 Januari 2024</div>
                                             <div class="meta--category">Kesehatan</div>
@@ -132,12 +184,15 @@
                             </div>
                         </div>
                     </section>
+
                     <section class="group-news-2 mb-5">
                         <h2 class="group-news--heading">Pilihan Editor</h2>
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="big-thumb-news"><img src="https://images.pexels.com/photos/264512/pexels-photo-264512.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="">
-                                    <div class="big-thumb-news--text"><a href="#">Inovasi Teknologi Baru Mengubah Paradigma Bisnis di Era Digital</a>
+                            <div class="col-lg-6 mb-5 mb-lg-0">
+                                <div class="big-thumb-news">
+                                    <img src="https://images.pexels.com/photos/264512/pexels-photo-264512.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="">
+                                    <div class="big-thumb-news--text">
+                                        <a href="#">Inovasi Teknologi Baru Mengubah Paradigma Bisnis di Era Digital</a>
                                         <div class="meta">
                                             <div class="meta--date">19 Januari 2024</div>
                                             <div class="meta--category">Teknologi</div>
@@ -146,32 +201,44 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 d-flex flex-column gap-4">
-                                <div class="small-list-news"><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                                    <div class="small-list-news--text"><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                                <div class="small-list-news">
+
+                                    <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                                    <div class="small-list-news--text">
+                                        <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                         <div class="meta">
                                             <div class="meta--date">20 Januari 2024</div>
                                             <div class="meta--category">Kesehatan</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="small-list-news"><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                                    <div class="small-list-news--text"><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                                <div class="small-list-news">
+
+                                    <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                                    <div class="small-list-news--text">
+                                        <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                         <div class="meta">
                                             <div class="meta--date">20 Januari 2024</div>
                                             <div class="meta--category">Ekonomi</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="small-list-news"><img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                                    <div class="small-list-news--text"><a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
+                                <div class="small-list-news">
+
+                                    <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                                    <div class="small-list-news--text">
+                                        <a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
                                         <div class="meta">
                                             <div class="meta--date">20 Januari 2024</div>
                                             <div class="meta--category">pendidikan</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="small-list-news"><img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                                    <div class="small-list-news--text"><a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
+                                <div class="small-list-news">
+
+                                    <img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                                    <div class="small-list-news--text">
+                                        <a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
                                         <div class="meta">
                                             <div class="meta--date">20 Januari 2024</div>
                                             <div class="meta--category">Kesehatan</div>
@@ -181,7 +248,10 @@
                             </div>
                         </div>
                     </section>
-                    <h2 class="group-news--heading">Berita Terkini</h2><a class="hero-thumb-news" href="#"><img src="https://images.pexels.com/photos/264512/pexels-photo-264512.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="">
+
+                    <h2 class="group-news--heading">Berita Terkini</h2>
+                    <a class="hero-thumb-news" href="#">
+                        <img src="https://images.pexels.com/photos/264512/pexels-photo-264512.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="">
                         <div class="hero-thumb-news--text">
                             <div class="meta">
                                 <div class="meta--date">19 Januari 2024</div>
@@ -191,75 +261,102 @@
                         </div>
                     </a>
                     <div class="d-flex flex-column gap-4 mt-4">
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Kesehatan</div><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                                <div class="meta--category">Kesehatan</div>
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Ekonomi</div><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                                <div class="meta--category">Ekonomi</div>
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">pendidikan</div><a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
+                                <div class="meta--category">pendidikan</div>
+                                <a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Kesehatan</div><a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
+                                <div class="meta--category">Kesehatan</div>
+                                <a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Kesehatan</div><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                                <div class="meta--category">Kesehatan</div>
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Ekonomi</div><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                                <div class="meta--category">Ekonomi</div>
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">pendidikan</div><a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
+                                <div class="meta--category">pendidikan</div>
+                                <a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Kesehatan</div><a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
+                                <div class="meta--category">Kesehatan</div>
+                                <a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Kesehatan</div><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                                <div class="meta--category">Kesehatan</div>
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Ekonomi</div><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                                <div class="meta--category">Ekonomi</div>
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-4 ps-lg-5">
-                    <div class="ads-google mb-5"><img src="./images/ads-320x320.jpg" alt=""></div>
+
+                    <div class="ads-google mt-5 mt-lg-0 mb-5">
+                        <img src="./images/ads-320x320.jpg" alt="">
+                    </div>
+
                     <h2 class="group-news--heading">Berita Populer</h2>
                     <div class="d-flex flex-column gap-4">
                         <div class="small-list-news">
-                            <div class="index">1</div><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                            <div class="index">1</div>
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Kesehatan</div>
@@ -267,8 +364,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">2</div><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                            <div class="index">2</div>
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Ekonomi</div>
@@ -276,8 +375,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">3</div><img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
+                            <div class="index">3</div>
+                            <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">pendidikan</div>
@@ -285,8 +386,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">4</div><img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
+                            <div class="index">4</div>
+                            <img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Kesehatan</div>
@@ -294,8 +397,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">5</div><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                            <div class="index">5</div>
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Kesehatan</div>
@@ -303,8 +408,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">6</div><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                            <div class="index">6</div>
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Ekonomi</div>
@@ -312,8 +419,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">7</div><img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
+                            <div class="index">7</div>
+                            <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">pendidikan</div>
@@ -321,8 +430,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">8</div><img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
+                            <div class="index">8</div>
+                            <img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Kesehatan</div>
@@ -330,8 +441,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">9</div><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                            <div class="index">9</div>
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Kesehatan</div>
@@ -339,8 +452,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">10</div><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                            <div class="index">10</div>
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Ekonomi</div>
@@ -348,35 +463,45 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="d-block py-4"></div>
+
                     <h2 class="group-news--heading">Trending</h2>
                     <div class="d-flex flex-column gap-5">
-                        <div class="small-thumb-news"><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-thumb-news--text"><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                        <div class="small-thumb-news">
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-thumb-news--text">
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Kesehatan</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="small-thumb-news"><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-thumb-news--text"><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                        <div class="small-thumb-news">
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-thumb-news--text">
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Ekonomi</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="small-thumb-news"><img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-thumb-news--text"><a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
+                        <div class="small-thumb-news">
+                            <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-thumb-news--text">
+                                <a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">pendidikan</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="small-thumb-news"><img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-thumb-news--text"><a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
+                        <div class="small-thumb-news">
+                            <img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-thumb-news--text">
+                                <a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Kesehatan</div>
@@ -384,12 +509,16 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
+
         <section class="highlight-news highlight-news__dark my-5">
             <h1 class="highlight-news--heading">Highlight News 1</h1>
-            <div class="container container--highlight-news"><a class="hero-thumb-news" href="#"><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+            <div class="container container--highlight-news">
+                <a class="hero-thumb-news" href="#">
+                    <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                     <div class="hero-thumb-news--text">
                         <div class="meta">
                             <div class="meta--date">20 Januari 2024</div>
@@ -397,7 +526,9 @@
                         </div>
                         <h1>Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</h1>
                     </div>
-                </a><a class="hero-thumb-news" href="#"><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                </a>
+                <a class="hero-thumb-news" href="#">
+                    <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                     <div class="hero-thumb-news--text">
                         <div class="meta">
                             <div class="meta--date">20 Januari 2024</div>
@@ -405,7 +536,9 @@
                         </div>
                         <h1>Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</h1>
                     </div>
-                </a><a class="hero-thumb-news" href="#"><img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                </a>
+                <a class="hero-thumb-news" href="#">
+                    <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                     <div class="hero-thumb-news--text">
                         <div class="meta">
                             <div class="meta--date">20 Januari 2024</div>
@@ -413,12 +546,17 @@
                         </div>
                         <h1>Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</h1>
                     </div>
-                </a></div>
+                </a>
+            </div>
         </section>
+
         <div class="container mt-5">
             <div class="row">
                 <div class="col-lg-8">
-                    <h2 class="group-news--heading">Berita Terkini</h2><a class="hero-thumb-news" href="#"><img src="https://images.pexels.com/photos/264512/pexels-photo-264512.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="">
+
+                    <h2 class="group-news--heading">Berita Terkini</h2>
+                    <a class="hero-thumb-news" href="#">
+                        <img src="https://images.pexels.com/photos/264512/pexels-photo-264512.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="">
                         <div class="hero-thumb-news--text">
                             <div class="meta">
                                 <div class="meta--date">19 Januari 2024</div>
@@ -428,75 +566,102 @@
                         </div>
                     </a>
                     <div class="d-flex flex-column gap-4 mt-4">
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Kesehatan</div><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                                <div class="meta--category">Kesehatan</div>
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Ekonomi</div><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                                <div class="meta--category">Ekonomi</div>
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">pendidikan</div><a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
+                                <div class="meta--category">pendidikan</div>
+                                <a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Kesehatan</div><a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
+                                <div class="meta--category">Kesehatan</div>
+                                <a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Kesehatan</div><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                                <div class="meta--category">Kesehatan</div>
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Ekonomi</div><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                                <div class="meta--category">Ekonomi</div>
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">pendidikan</div><a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
+                                <div class="meta--category">pendidikan</div>
+                                <a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Kesehatan</div><a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
+                                <div class="meta--category">Kesehatan</div>
+                                <a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Kesehatan</div><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                                <div class="meta--category">Kesehatan</div>
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Ekonomi</div><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                                <div class="meta--category">Ekonomi</div>
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-lg-4 ps-lg-5">
-                    <div class="ads-google mb-5"><img src="./images/ads-320x480.jpg" alt=""></div>
+
+                    <div class="ads-google mt-5 mt-lg-0 mb-5">
+                        <img src="./images/ads-320x480.jpg" alt="">
+                    </div>
+
                     <h2 class="group-news--heading">Berita Populer</h2>
                     <div class="d-flex flex-column gap-4">
                         <div class="small-list-news">
-                            <div class="index">1</div><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                            <div class="index">1</div>
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Kesehatan</div>
@@ -504,8 +669,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">2</div><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                            <div class="index">2</div>
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Ekonomi</div>
@@ -513,8 +680,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">3</div><img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
+                            <div class="index">3</div>
+                            <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">pendidikan</div>
@@ -522,8 +691,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">4</div><img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
+                            <div class="index">4</div>
+                            <img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Kesehatan</div>
@@ -531,8 +702,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">5</div><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                            <div class="index">5</div>
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Kesehatan</div>
@@ -540,8 +713,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">6</div><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                            <div class="index">6</div>
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Ekonomi</div>
@@ -549,8 +724,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">7</div><img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
+                            <div class="index">7</div>
+                            <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">pendidikan</div>
@@ -558,8 +735,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">8</div><img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
+                            <div class="index">8</div>
+                            <img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Kesehatan</div>
@@ -567,8 +746,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">9</div><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                            <div class="index">9</div>
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Kesehatan</div>
@@ -576,8 +757,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">10</div><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                            <div class="index">10</div>
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Ekonomi</div>
@@ -585,12 +768,16 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
+
         <section class="highlight-news highlight-news__red my-5">
             <h1 class="highlight-news--heading">Highlight News 2</h1>
-            <div class="container container--highlight-news"><a class="hero-thumb-news" href="#"><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+            <div class="container container--highlight-news">
+                <a class="hero-thumb-news" href="#">
+                    <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                     <div class="hero-thumb-news--text">
                         <div class="meta">
                             <div class="meta--date">20 Januari 2024</div>
@@ -598,7 +785,9 @@
                         </div>
                         <h1>Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</h1>
                     </div>
-                </a><a class="hero-thumb-news" href="#"><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                </a>
+                <a class="hero-thumb-news" href="#">
+                    <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                     <div class="hero-thumb-news--text">
                         <div class="meta">
                             <div class="meta--date">20 Januari 2024</div>
@@ -606,7 +795,9 @@
                         </div>
                         <h1>Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</h1>
                     </div>
-                </a><a class="hero-thumb-news" href="#"><img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                </a>
+                <a class="hero-thumb-news" href="#">
+                    <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                     <div class="hero-thumb-news--text">
                         <div class="meta">
                             <div class="meta--date">20 Januari 2024</div>
@@ -614,12 +805,17 @@
                         </div>
                         <h1>Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</h1>
                     </div>
-                </a></div>
+                </a>
+            </div>
         </section>
+
         <div class="container mt-5">
             <div class="row">
                 <div class="col-lg-8">
-                    <h2 class="group-news--heading">Berita Terkini</h2><a class="hero-thumb-news" href="#"><img src="https://images.pexels.com/photos/264512/pexels-photo-264512.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="">
+
+                    <h2 class="group-news--heading">Berita Terkini</h2>
+                    <a class="hero-thumb-news" href="#">
+                        <img src="https://images.pexels.com/photos/264512/pexels-photo-264512.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2" alt="">
                         <div class="hero-thumb-news--text">
                             <div class="meta">
                                 <div class="meta--date">19 Januari 2024</div>
@@ -629,75 +825,102 @@
                         </div>
                     </a>
                     <div class="d-flex flex-column gap-4 mt-4">
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Kesehatan</div><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                                <div class="meta--category">Kesehatan</div>
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Ekonomi</div><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                                <div class="meta--category">Ekonomi</div>
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">pendidikan</div><a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
+                                <div class="meta--category">pendidikan</div>
+                                <a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Kesehatan</div><a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
+                                <div class="meta--category">Kesehatan</div>
+                                <a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Kesehatan</div><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                                <div class="meta--category">Kesehatan</div>
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Ekonomi</div><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                                <div class="meta--category">Ekonomi</div>
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">pendidikan</div><a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
+                                <div class="meta--category">pendidikan</div>
+                                <a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Kesehatan</div><a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
+                                <div class="meta--category">Kesehatan</div>
+                                <a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Kesehatan</div><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                                <div class="meta--category">Kesehatan</div>
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
-                        <div class="medium-list-news"><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                        <div class="medium-list-news">
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
                             <div class="medium-list-news--text">
-                                <div class="meta--category">Ekonomi</div><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                                <div class="meta--category">Ekonomi</div>
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta--date">20 Januari 2024</div>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-lg-4 ps-lg-5">
-                    <div class="ads-google mb-5"><img src="./images/ads-320x480.jpg" alt=""></div>
+
+                    <div class="ads-google mt-5 mt-lg-0 mb-5">
+                        <img src="./images/ads-320x480.jpg" alt="">
+                    </div>
+
                     <h2 class="group-news--heading">Berita Populer</h2>
                     <div class="d-flex flex-column gap-4">
                         <div class="small-list-news">
-                            <div class="index">1</div><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                            <div class="index">1</div>
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Kesehatan</div>
@@ -705,8 +928,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">2</div><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                            <div class="index">2</div>
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Ekonomi</div>
@@ -714,8 +939,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">3</div><img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
+                            <div class="index">3</div>
+                            <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">pendidikan</div>
@@ -723,8 +950,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">4</div><img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
+                            <div class="index">4</div>
+                            <img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Kesehatan</div>
@@ -732,8 +961,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">5</div><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                            <div class="index">5</div>
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Kesehatan</div>
@@ -741,8 +972,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">6</div><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                            <div class="index">6</div>
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Ekonomi</div>
@@ -750,8 +983,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">7</div><img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
+                            <div class="index">7</div>
+                            <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Pendidikan Online: Tantangan dan Peluang di Masa Pandemi</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">pendidikan</div>
@@ -759,8 +994,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">8</div><img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
+                            <div class="index">8</div>
+                            <img src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Penemuan Ilmiah Terkini yang Membuka Pintu untuk Pengobatan Baru</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Kesehatan</div>
@@ -768,8 +1005,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">9</div><img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
+                            <div class="index">9</div>
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Perkembangan Terbaru dalam Penanganan Krisis Kesehatan Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Kesehatan</div>
@@ -777,8 +1016,10 @@
                             </div>
                         </div>
                         <div class="small-list-news">
-                            <div class="index">10</div><img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
-                            <div class="small-list-news--text"><a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
+                            <div class="index">10</div>
+                            <img src="https://images.pexels.com/photos/4386292/pexels-photo-4386292.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="">
+                            <div class="small-list-news--text">
+                                <a href="#">Pertumbuhan Ekonomi dan Peluang Investasi di Tengah Ketidakpastian Global</a>
                                 <div class="meta">
                                     <div class="meta--date">20 Januari 2024</div>
                                     <div class="meta--category">Ekonomi</div>
@@ -786,64 +1027,101 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
+
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4"><a class="footer--logo" href="#">Logo Web</a>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <a class="footer--logo" href="#">Logo Web</a>
                         <ul class="footer--contact">
                             <li>
-                                <div class="icon-list"><i class="fa-solid fa-map-marker-alt"></i></div><span>Sungai Raya Dalam, Kabupaten Kubu Raya, Kalimantan Barat</span>
+                                <div class="icon-list">
+                                    <i class="fa-solid fa-map-marker-alt"></i>
+                                </div>
+                                <span>Sungai Raya Dalam, Kabupaten Kubu Raya, Kalimantan Barat</span>
                             </li>
                             <li>
-                                <div class="icon-list"><i class="fa-solid fa-phone"></i></div><span>0987-6543-2123</span>
+                                <div class="icon-list">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <span>0987-6543-2123</span>
                             </li>
                             <li>
-                                <div class="icon-list"><i class="fa-solid fa-envelope"></i></div><span>email@mail.com</span>
+                                <div class="icon-list">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <span>email@mail.com</span>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-2">
-                        <ul class="footer--nav-link">
-                            <li><a href="#">Nasional</a></li>
-                            <li><a href="#">Internasional</a></li>
-                            <li><a href="#">Ekonomi</a></li>
-                            <li><a href="#">Olahraga</a></li>
-                            <li><a href="#">Teknologi</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2">
-                        <ul class="footer--nav-link">
-                            <li><a href="#">Otomotif</a></li>
-                            <li><a href="#">Entertainment</a></li>
-                            <li><a href="#">Gaya Hidup</a></li>
-                            <li><a href="#">Pendidikan</a></li>
-                            <li><a href="#">Kesehatan</a></li>
-                        </ul>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="row">
+                            <div class="col-sm-6 mb-4 mb-sm-0">
+                                <ul class="footer--nav-link">
+                                    <li><a href="#">Nasional</a></li>
+                                    <li><a href="#">Internasional</a></li>
+                                    <li><a href="#">Ekonomi</a></li>
+                                    <li><a href="#">Olahraga</a></li>
+                                    <li><a href="#">Teknologi</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="footer--nav-link">
+                                    <li><a href="#">Otomotif</a></li>
+                                    <li><a href="#">Entertainment</a></li>
+                                    <li><a href="#">Gaya Hidup</a></li>
+                                    <li><a href="#">Pendidikan</a></li>
+                                    <li><a href="#">Kesehatan</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4">
                         <h4 class="text-white mb-4 fw-bold">Follow kami</h4>
                         <ul class="footer--socmed">
-                            <li><a href="#">
-                                    <div class="icon-list"><i class="fa-brands fa-facebook"></i></div><span>Nama sosial media</span>
-                                </a></li>
-                            <li><a href="#">
-                                    <div class="icon-list"><i class="fa-brands fa-twitter"></i></div><span>Nama sosial media</span>
-                                </a></li>
-                            <li><a href="#">
-                                    <div class="icon-list"><i class="fa-brands fa-instagram"></i></div><span>Nama sosial media</span>
-                                </a></li>
-                            <li><a href="#">
-                                    <div class="icon-list"><i class="fa-brands fa-youtube"></i></div><span>Nama sosial media</span>
-                                </a></li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon-list">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </div>
+                                    <span>Nama sosial media</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon-list">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </div>
+                                    <span>Nama sosial media</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon-list">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                    <span>Nama sosial media</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon-list">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </div>
+                                    <span>Nama sosial media</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer--bottom">
-                <div class="container"><span class="copyright">copyright &copy; 2024 nama web</span>
+                <div class="container">
+                    <span class="copyright">copyright &copy; 2024 nama web</span>
                     <ul class="copyright--nav">
                         <li><a href="#">Tentang Kami</a></li>
                         <li><a href="#">Redaksi</a></li>
@@ -853,6 +1131,7 @@
             </div>
         </footer>
 
-        <script src="js/main.js"></script>
+        <script src="./js/main.js"></script>
     </body>
+
 </html>
