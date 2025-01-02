@@ -939,7 +939,7 @@ section.call-to-action-banner .side-text h3 {
   transition: 0.35s ease-in-out;
 }
 
-.accordion-header > h5 {
+.accordion-header > h6 {
   margin-bottom: 0;
   font-weight: 600;
 }
@@ -955,7 +955,7 @@ section.call-to-action-banner .side-text h3 {
 }
 
 .accordion-content.active {
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 footer.footer {
