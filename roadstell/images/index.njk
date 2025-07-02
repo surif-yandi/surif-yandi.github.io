@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Landing 2</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"/>
+        <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    </head>
+    <body>
+        {% include "./partials/header.njk" %}
+        <main>
+            <!-- Hero Banner Start -->
+            <section class="hero-banner">
+                <div class="container position-relative">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <h1 class="hero-heading mb-4">Simplify Your Sales and Inventory</h1>
+                            <span class="fs-5">Smart cashier and stock management in one mobile app made for small business owners who want full control without the complexity.</span>
+                            <div class="d-flex flex-column mt-5">
+                                <h5 class="mb-4">Download it on</h5>
+                                <div class="d-flex gap-3">
+                                    <a href="#" class="btn btn-lg btn-download">
+                                        <img src="./images/playstore.png" alt="playstore-logo-img" />
+                                        <span>Playstore</span>
+                                    </a>
+                                    <a href="#" class="btn btn-lg btn-download">
+                                        <img src="./images/apple.png" alt="apple-logo-img" />
+                                        <span>Appstore</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 offset-lg-1">
+                            <img src="./images/hero-banner.webp" class="w-100" alt="hero-banner-img" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Hero Banner End -->
+
+            <!-- Section About Start -->
+            <section class="about bg-white">
+                <div class="container">
+                    <div class="row justify-content-center text-center gy-5">
+                        <div class="col-lg-8 mb-4">
+                            <h5 class="badge-heading mb-4">About App</h5>
+                            <h1 class="mb-4">What Is Roadstell App ?</h1>
+                            <p class="fs-5 lh-base">Roadstell is a user-friendly mobile app designed to manage cashier transactions and stock effortlessly. Whether you're running a retail shop, café, or warehouse, Roadstell helps you stay organized, track sales, and manage inventory in real-time—all from your phone.</p>
+                        </div>
+                        <div class="col-lg-10 d-flex">
+                            <div class="row gx-3">
+                                <div class="col-lg-4 d-flex align-items-end">
+                                    <img src="./images/about-1.webp" class="w-100" alt="about-1-img" />
+                                </div>
+                                <div class="col-lg-4 d-flex align-items-end">
+                                    <img src="./images/about-2.webp" class="w-100" alt="about-2-img" />
+                                </div>
+                                <div class="col-lg-4 d-flex align-items-end">
+                                    <img src="./images/about-3.webp" class="w-100" alt="about-3-img" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section About End -->
+
+            <!-- Section Features Start -->
+            <section class="features bg-light">
+                <div class="container">
+                    <div class="row justify-content-center text-center mb-5 pb-4">
+                        <div class="col-lg-8 mb-4">
+                            <h5 class="badge-heading mb-4">Features</h5>
+                            <h1 class="mb-4">Everything You Need to Run and Grow Your Business</h1>
+                            <p class="fs-5 lh-base">Roadstell is packed with powerful features that simplify your daily operations and help you scalewithout the headache.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="card-feature d-flex flex-column text-center align-items-center bg-white gap-3">
+                                <div class="icon mb-1 bg-warning text-dark position-relative">
+                                    <i class="fi fi-rr-dashboard-monitor position-relative"></i>
+                                </div>
+                                <h4 class="mb-0 position-relative">Auto Low Stock Alerts</h4>
+                                <p class="mb-0 position-relative">Get real-time alerts when stock hits minimum levels, never run out again.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card-feature d-flex flex-column text-center align-items-center bg-white gap-3">
+                                <div class="icon mb-1 bg-warning text-dark position-relative">
+                                    <i class="fi fi-rr-dashboard-monitor position-relative"></i>
+                                </div>
+                                <h4 class="mb-0 position-relative">Digital Receipt System</h4>
+                                <p class="mb-0 position-relative">Automatically send receipts via email or QR code, no more paper waste.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card-feature d-flex flex-column text-center align-items-center bg-white gap-3">
+                                <div class="icon mb-1 bg-warning text-dark position-relative">
+                                    <i class="fi fi-rr-dashboard-monitor position-relative"></i>
+                                </div>
+                                <h4 class="mb-0 position-relative">Discounts & Promotions</h4>
+                                <p class="mb-0 position-relative">Easily set up time-based promos or product-specific discounts for more sales.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card-feature d-flex flex-column text-center align-items-center bg-white gap-3">
+                                <div class="icon mb-1 bg-warning text-dark position-relative">
+                                    <i class="fi fi-rr-dashboard-monitor position-relative"></i>
+                                </div>
+                                <h4 class="mb-0 position-relative">Custom Product Variants</h4>
+                                <p class="mb-0 position-relative">Offer flexible product options like size, color, or bundles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section Features End -->
+
+            <!-- Section Benefit Start -->
+            <section class="benefits bg-white">
+                <div class="container">
+                    <div class="row justify-content-center text-center mb-5">
+                        <div class="col-lg-8 mb-4">
+                            <h5 class="badge-heading mb-4">Benefits</h5>
+                            <h1 class="mb-4">Designed for Ease, Built for Results</h1>
+                            <p class="fs-5 lh-base">From setup to daily use, Roadstell is made to be intuitive, efficient, and accessible to every business owner.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="./images/benefit.webp" class="img-fluid" alt="benefit-img" />
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-end">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="card-feature d-flex flex-column bg-light gap-3">
+                                        <div class="icon mb-1 bg-primary text-warning position-relative">
+                                            <i class="fi fi-rr-dashboard-monitor position-relative"></i>
+                                        </div>
+                                        <h4 class="mb-0 position-relative">Flexible Payment Methods</h4>
+                                        <p class="mb-0 position-relative">Accept cash, e-wallets, debit, and credit cards with one seamless system.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card-feature d-flex flex-column bg-light gap-3">
+                                        <div class="icon mb-1 bg-primary text-warning position-relative">
+                                            <i class="fi fi-rr-dashboard-monitor position-relative"></i>
+                                        </div>
+                                        <h4 class="mb-0 position-relative">Automatic Data Sync</h4>
+                                        <p class="mb-0 position-relative">Your sales, stock, and reports are synced across all devices instantly.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card-feature d-flex flex-column bg-light gap-3">
+                                        <div class="icon mb-1 bg-primary text-warning position-relative">
+                                            <i class="fi fi-rr-dashboard-monitor position-relative"></i>
+                                        </div>
+                                        <h4 class="mb-0 position-relative">Time Saving Shortcuts</h4>
+                                        <p class="mb-0 position-relative">Quick-access tools and search functions to help you work faster daily.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card-feature d-flex flex-column bg-light gap-3">
+                                        <div class="icon mb-1 bg-primary text-warning position-relative">
+                                            <i class="fi fi-rr-dashboard-monitor position-relative"></i>
+                                        </div>
+                                        <h4 class="mb-0 position-relative">Real Time Dashboard</h4>
+                                        <p class="mb-0 position-relative">Track income, inventory, and staff activity from a live control panel.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section Benefit End -->
+
+            <!-- Section Integration Start -->
+            <section class="integration bg-light">
+                <div class="container">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-lg-8 mb-5 pb-4">
+                            <h5 class="badge-heading mb-4">Integrations</h5>
+                            <h1 class="mb-4">Connect With Your Favorite Tools.</h1>
+                            <p class="fs-5 lh-base">Boost your productivity by connecting Roadstell with apps you already love. Whether it's accounting, marketing, or e-commerce, Roadstell plays well with others.</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <ul class="list-logo d-flex justify-content-center flex-wrap">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/shopify.webp" alt="shopify-logo-img" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/wa.webp" alt="wa-logo-img" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/mailchimp.webp" alt="mailchimp-logo-img" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/xero.webp" alt="xero-logo-img" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/quickbook.webp" alt="quickbook-logo-img" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/amazon.webp" alt="amazon-logo-img" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/telegram.webp" alt="telegram-logo-img" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section Integration End -->
+
+            <!-- Section Testimonial Start -->
+            <section class="testimonial bg-white">
+                <div class="container">
+                    <div class="row justify-content-center mb-5 pb-4 text-center">
+                        <div class="col-lg-8">
+                            <h5 class="badge-heading mb-4">Testimonials</h5>
+                            <h1 class="mb-4">Small Businesses, Big Results.</h1>
+                            <p class="fs-5 lh-base">See how Roadstell is helping businesses just like yours streamline operations and thrive in a competitive market.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slider Testimonial Start -->
+                    <div class="overflow-hidden mb-5">
+                        <div id="sliderTestimonials" data-aos="fade-up">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex flex-column bg-light">
+                                    <div class="d-flex gap-2 mb-4">
+                                        <i class="fi fi-sr-star fs-5"></i>
+                                        <i class="fi fi-sr-star fs-5"></i>
+                                        <i class="fi fi-sr-star fs-5"></i>
+                                        <i class="fi fi-sr-star fs-5"></i>
+                                        <i class="fi fi-rr-star-sharp-half-stroke fs-5"></i>
+                                    </div>
+                                    <p class="lh-base mb-4">FlowStudio replaced three tools we used before. Now, our entire design process from client
+                                        briefs to final delivery is in one place.</p>
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <div class="frame-photo">
+                                            <img src="./images/client-photo-1.webp" class="w-100" alt="image_client_1"/>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <span class="fw-bold text-dark lh-base">Maya R.</span>
+                                            <span class="text-dark lh-base">Creative Director at OrangeGrid</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex flex-column bg-light">
+                                    <div class="d-flex gap-2 mb-4">
+                                        <i class="fi fi-sr-star fs-5"></i>
+                                        <i class="fi fi-sr-star fs-5"></i>
+                                        <i class="fi fi-sr-star fs-5"></i>
+                                        <i class="fi fi-sr-star fs-5"></i>
+                                        <i class="fi fi-rr-star-sharp-half-stroke fs-5"></i>
+                                    </div>
+                                    <p class="lh-base mb-4">FlowStudio replaced three tools we used before. Now, our entire design process from client
+                                        briefs to final delivery is in one place.</p>
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <div class="frame-photo">
+                                            <img src="./images/client-photo-1.webp" class="w-100" alt="image_client_1"/>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <span class="fw-bold text-dark lh-base">Maya R.</span>
+                                            <span class="text-dark lh-base">Creative Director at OrangeGrid</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex flex-column bg-light">
+                                    <div class="d-flex gap-2 mb-4">
+                                        <i class="fi fi-sr-star fs-5"></i>
+                                        <i class="fi fi-sr-star fs-5"></i>
+                                        <i class="fi fi-sr-star fs-5"></i>
+                                        <i class="fi fi-sr-star fs-5"></i>
+                                        <i class="fi fi-rr-star-sharp-half-stroke fs-5"></i>
+                                    </div>
+                                    <p class="lh-base mb-4">FlowStudio replaced three tools we used before. Now, our entire design process from client
+                                        briefs to final delivery is in one place.</p>
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <div class="frame-photo">
+                                            <img src="./images/client-photo-1.webp" class="w-100" alt="image_client_1"/>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <span class="fw-bold text-dark lh-base">Maya R.</span>
+                                            <span class="text-dark lh-base">Creative Director at OrangeGrid</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex flex-column bg-light">
+                                    <div class="d-flex gap-2 mb-4">
+                                        <i class="fi fi-sr-star fs-5"></i>
+                                        <i class="fi fi-sr-star fs-5"></i>
+                                        <i class="fi fi-sr-star fs-5"></i>
+                                        <i class="fi fi-sr-star fs-5"></i>
+                                        <i class="fi fi-rr-star-sharp-half-stroke fs-5"></i>
+                                    </div>
+                                    <p class="lh-base mb-4">FlowStudio replaced three tools we used before. Now, our entire design process from client
+                                        briefs to final delivery is in one place.</p>
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <div class="frame-photo">
+                                            <img src="./images/client-photo-1.webp" class="w-100" alt="image_client_1"/>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <span class="fw-bold text-dark lh-base">Maya R.</span>
+                                            <span class="text-dark lh-base">Creative Director at OrangeGrid</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slider Testimonial End -->
+
+                    <!-- Slider Testimonial Navigation Start -->
+                    <div class="d-flex justify-content-end">
+                        <div class="w-100 h-100 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="w-100 d-flex flex-row align-items-center justify-content-center container-tools-slider gap-5">
+                                <div class="pagination-slider fw-semibold">
+                                    <span class="current text-dark"></span>
+                                    <span class="text-dark">/</span>
+                                    <span class="total text-dark"></span>
+                                </div>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <div class="nav-left-slider pt-1">
+                                        <i class="fi fi-br-angle-left"></i>
+                                    </div>
+                                    <div class="nav-right-slider pt-1">
+                                        <i class="fi fi-br-angle-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slider Testimonial Navigation End -->
+                </div>
+            </section>
+            <!-- Section Testimoinal End -->
+
+            <!-- Section Trusted Partner Start -->
+            <section class="trusted-partner">
+                <div class="container">
+                    <div class="card-partner">
+                        <h4>Trusted Partner</h4>
+                        <ul class="unlisted d-flex gap-5">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/google.webp" alt="google-logo-img" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/github.webp" alt="github-logo-img" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/microsoft.webp" alt="microsoft-logo-img" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/bing.webp" alt="bing-logo-img" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/chrome.webp" alt="chrome-logo-img" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/bitbucket.webp" alt="bitbucket-logo-img" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Section Trusted Partner End -->
+        </main>
+        {% include "./partials/footer.njk" %}
+        <script src="./js/plugins.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
